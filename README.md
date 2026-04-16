@@ -1,2 +1,24 @@
-# Durable_Research_Architect_Agent
-🏗️ A resilient, stateful AI agentic workflow built with Python and the Gemini 2.0 SDK. Implements durable execution patterns, automatic key rotation, and exponential backoff to handle API rate limits (429/503) gracefully. Features real-time web research via DuckDuckGo and persistent JSON state management for crash recovery.
+# Durable AI Research Architect 🚀
+
+An entry-level demonstration of **Agentic Workflow Architecture** using Python and the Gemini 1.5 API. This project moves beyond simple chatbots by implementing **Persistence**, **Tool-Use**, and **Key Rotation**.
+
+## 🏗️ Architectural Features
+
+- **State Persistence:** Uses a `state_manager` to save progress to `agent_state.json`. If the system crashes or is interrupted (Ctrl+C), it resumes from the last completed phase.
+- **Dynamic Key Rotation:** Implements a fallback strategy that rotates through multiple Google Gemini API keys to handle `429 Rate Limit` errors automatically.
+- **Function Calling:** Demonstrates "Tool-Use" by allowing the LLM to trigger real-time web searches via DuckDuckGo.
+- **Graceful Error Handling:** Custom signal handling for `KeyboardInterrupt` to ensure clean exits without messy tracebacks.
+
+## 🛠️ Tech Stack
+
+- **Language:** Python 3.10+
+- **Model:** Gemini 1.5 Flash / Pro
+- **Tools:** DuckDuckGo Search API
+- **Environment:** `python-dotenv` for secret management
+
+## 🚀 Getting Started
+
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/durable-ai-researcher.git](https://github.com/YOUR_USERNAME/durable-ai-researcher.git)
+   cd durable-ai-researcher
