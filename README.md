@@ -20,5 +20,5 @@ An entry-level demonstration of **Agentic Workflow Architecture** using Python a
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/durable-ai-researcher.git](https://github.com/YOUR_USERNAME/durable-ai-researcher.git)
+   git clone https://github.com/MSam-data/Durable_Research_Architect_Agent.git
    cd durable-ai-researcher
