@@ -33,3 +33,19 @@ add your API keys as:
 
 4. **Run the application:**
 - `python main.py`
+
+## 📈 The Durable Research Architect (Multi-Step Agent) Workflow.
+```mermaid
+graph TD
+    A[User Input/Goal] --> B{State Manager}
+    B -->|Check for Saved State| C[Action Planner]
+    C --> D[DuckDuckGo Search Tool]
+    D --> E{API Check}
+    E -- 200 OK --> F[Information Extraction]
+    E -- 429/503 Error --> G[Exponential Backoff / Retry]
+    G --> D
+    F --> H[Gemini 2.0 Reasoning]
+    H --> I[Result Storage]
+    I --> B
+    B -->|Goal Met| J[Final Report Generation]
+```
