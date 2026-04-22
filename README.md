@@ -22,3 +22,14 @@ An entry-level demonstration of **Agentic Workflow Architecture** using Python a
    ```bash
    git clone https://github.com/MSam-data/Durable_Research_Architect_Agent.git
    cd Durable_Research_Architect_Agent
+
+2. **Install dependencies:**
+- `pip install -r requirements.txt`
+
+3. **Find .env file:**
+add your API keys and log file root folder as:
+- `GEMINI_KEY_1=your_first_api_key`
+- `GEMINI_KEY_2=your_second_api_key`
+
+4. **Run the application:**
+- `python main.py`
