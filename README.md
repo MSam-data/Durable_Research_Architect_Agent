@@ -27,9 +27,9 @@ An entry-level demonstration of **Agentic Workflow Architecture** using Python a
 - `pip install -r requirements.txt`
 
 3. **Find .env file:**
-add your API keys and log file root folder as:
-- `GEMINI_KEY_1=your_first_api_key`
-- `GEMINI_KEY_2=your_second_api_key`
+add your API keys as:
+- `GOOGLE_API_KEY=AIza_Your_Google_API_Key_here.......`
+- `GOOGLE_API_KEY_2=AIza_Your_Google_API_Key_2_here.......`
 
 4. **Run the application:**
 - `python main.py`
